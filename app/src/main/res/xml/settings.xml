@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="Configuraciones">
+
+        <Preference android:title="Cambiar de carrera/plan" android:summary="Proximamente?" android:key="Cambio"></Preference>
+        <Preference android:title="Restaurar base de datos" android:summary="*Debug option*" android:key="borrarTodo"></Preference>
+        <Preference android:title="Volver a mostrar las ayudas por seccion" android:key="mostrarAyudas"></Preference>
+        <Preference android:title="Borrar todos los datos de 'Mi carrera'" android:key="borrarMiCarrera"></Preference>
+        <ListPreference
+            android:key="ordenameMaterias"
+            android:title="Forma de ordenar"
+            android:summary="La seleccion de materias en las primeras cuatro secciones"
+            android:entries="@array/ordenarMaterias"
+            android:entryValues="@array/ordenarMaterias"
+            android:dialogTitle="Ordenar" />
+
+    </PreferenceCategory>
+
+    <!--<PreferenceCategory android:title="Backup">-->
+
+        <!--<Preference android:title="Guardar datos" android:summary="De 'Mi Carrera'" android:key="backup"></Preference>-->
+        <!--<Preference android:title="Restaurar datos" android:summary="De 'Mi Carrera'" android:key="restaurar"></Preference>-->
+
+    <!--</PreferenceCategory>-->
+
+    <PreferenceCategory android:title="Acerca de">
+
+        <Preference android:title="Mandame un mail" android:key="mail" android:summary="rozasni@gmail.com" />
+        <Preference android:title="Version" android:key="version" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

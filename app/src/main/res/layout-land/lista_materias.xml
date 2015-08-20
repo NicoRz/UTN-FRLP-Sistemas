@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp">
+
+    <TextView
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Filtrar por Año"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/textView" />
+
+    <TextView
+        android:id="@+id/titulo2"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Seleccionar Materia"
+        android:layout_weight="50"
+        android:layout_above="@+id/linearLayout"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView" >
+
+        <TableLayout
+            android:id="@+id/ocultarSeleccionarAnio"
+            android:background="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:stretchColumns="0"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="2dp"
+            android:layout_weight="1">
+
+            <TableRow
+                android:background="@color/black"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:id="@+id/elegirAnio"
+                    android:background="@color/white"/>
+
+                <ImageView
+                    android:id="@+id/flecha1"
+                    android:background="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:src="@drawable/ic_navigation_arrow_drop_down"
+                    android:contentDescription="Listo" />
+
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:id="@+id/ocultarSeleccionarMateria"
+            android:background="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:stretchColumns="0"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="2dp"
+            android:layout_weight="1">
+
+            <TableRow
+                android:background="@color/white"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <Spinner
+                        android:layout_width="fill_parent"
+                        android:layout_height="35dp"
+                        android:id="@+id/elegirMateria"
+                        android:background="@color/white"
+                        android:ellipsize="marquee"
+                        android:layout_toLeftOf="@+id/flecha2"
+                        android:layout_toStartOf="@+id/flecha2" />
+
+                    <ImageView
+                        android:id="@+id/flecha2"
+                        android:background="@color/white"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:src="@drawable/ic_navigation_arrow_drop_down"
+                        android:contentDescription="Listo"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true" />
+
+                </RelativeLayout>
+            </TableRow>
+        </TableLayout>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/titulo3"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Materias que habilita para cursar"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/linearLayout"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/listaMaterias"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/titulo3"
+        android:layout_alignParentBottom="true" />
+
+
+</RelativeLayout>

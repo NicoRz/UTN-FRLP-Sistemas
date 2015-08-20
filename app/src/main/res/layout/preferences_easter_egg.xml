@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@+id/layout" android:background="@color/black" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="20.0sp" android:textColor="@color/white" android:layout_gravity="center" android:id="@+id/textoUp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Aplicacion creada por" />
+        <ImageView android:layout_gravity="center" android:id="@+id/imageView1" android:layout_width="200.0dip" android:layout_height="200.0dip" android:src="@drawable/logo" android:contentDescription="Logo" />
+        <TextView android:textSize="20.0sp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:id="@+id/textoDown" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:layout_marginRight="2.0dip" android:layout_marginBottom="2.0dip" android:text="Nicolas Rozas" />
+    </LinearLayout>
+</ScrollView>

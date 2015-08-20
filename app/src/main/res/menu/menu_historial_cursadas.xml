@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:nicorz="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:icon="@drawable/ic_sort"
+        android:id="@+id/ordenar"
+        android:orderInCategory="100"
+        android:title="Ordenar por"
+        nicorz:showAsAction="ifRoom">
+        <menu>
+            <item android:id="@+id/fechaAscendente" android:title="Fecha ascendente" />
+            <item android:id="@+id/fechaDescendente" android:title="Fecha descendente" />
+            <item android:id="@+id/anioMateria" android:title="Año materia" />
+            <item android:id="@+id/nombreMateria" android:title="Nombre materia" />
+        </menu>
+    </item>
+
+</menu>

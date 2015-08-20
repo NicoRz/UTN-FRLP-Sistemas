@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="cyan">#00FFFF</color>
+    <color name="grey">#6E6E6E</color>
+    <color name="greyClaro">#C3C0C0</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="orangeclaro">#FFE599</color>
+    <color name="orangeclaropress">#FFD552</color>
+    <color name="orange">#FF9900</color>
+    <color name="orangepress">#FFCA79</color>
+    <color name="trans">#00000000</color>
+    <color name="amarillo">#FFFF00</color>
+    <color name="roja">#FF0000</color>
+    <color name="banco">#BDBDBD</color>
+    <color name="green">#31B404</color>
+    <color name="cyanOscuro">#2E9AFE</color>
+    <color name="drawerOscuro">#111111</color>
+    <color name="verdeGane">#00FF00</color>
+    <color name="verdeActionBar">#64A743</color>
+    <color name="azulReferencia">#3366CC</color>
+    <color name="azulOscuro">#000066</color>
+    <color name="azulFondo">#aab4d7</color>
+    <color name="azulFondoApretado">#95A3D5</color>
+
+
+    <color name="darkPrimaryColor">#303F9F</color>
+    <color name="primaryColor">#3F51B5</color>
+    <color name="lightPrimaryColor">#C5CAE9</color>
+    <color name="accentColor">#FF5252</color>
+    <color name="amarilloTabs">#FFD54F</color>
+    <color name="primaryText">#212121</color>
+    <color name="secondaryText">#727272</color>
+    <color name="dividerColor">#B6B6B6</color>
+
+</resources>
